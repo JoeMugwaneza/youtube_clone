@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar";
 
 
 const Navbar = () => (
-  <stack 
+  <Stack 
     direction="row"
     alignItems="center"
     p="2"
@@ -15,7 +15,7 @@ const Navbar = () => (
       <img src={logo} alt="logo" height={45}/>
     </Link>
     < SearchBar/>
-  </stack>
+  </Stack>
 )
   
 
