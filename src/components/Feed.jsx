@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 import Sidebar from './Sidebar';
 import Videos from './Videos';
+import { fetchFromAPI } from '../utils/fetchFromAPI';
 
 const Feed = () => {
   return (
@@ -14,7 +15,6 @@ const Feed = () => {
         }}
       >
         <Sidebar />
-
         <Typography
           className='copyright'
           variant='body2'
@@ -24,6 +24,8 @@ const Feed = () => {
         </Typography>
       </Box>
       <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
+
+
         <Typography
           variant='h4'
           fontWeight='bold'
